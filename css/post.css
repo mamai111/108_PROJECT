@@ -1,0 +1,137 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #F4E7FB, #F3DCDC, #F5BCBA, #E3AADD, #C8A8E9, #C3C7F3);
+    margin: 0 auto;  
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    cursor: pointer;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px); /* Adjusting for header height */
+}
+
+form {
+    background-color:#fff;
+    padding: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px; /* Increase max-width for a wider form */
+    width: 100%; /* Ensure it takes full width up to max-width */
+    
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="file"] {
+    margin-bottom: 25px;
+}
+input[type="submit"] {
+    background-color: #32b6ef;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 25px;
+    width: 100%;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #0b88bd;
+}
+
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    display: none; /* Hidden by default */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+.modal-content {
+    background-color: #fff;
+    padding: 20px; /* Adjust padding for consistent spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Fixed width for the modal */
+}
+.card {
+    padding: 20px;
+    text-align: center;
+}
+.card h2 {
+    margin-bottom: 20px;
+}
+.card label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left; /* Align labels to the left */
+}
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="password"],
+.card input[type="date"],
+.card select, /* Include select for consistency */
+.card textarea { /* Include textarea for consistency */
+    width: calc(100% - 20px); /* Adjust width to match modal */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded edges */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+.btn {
+    background-color: #32b6ef; /* Bootstrap primary color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    width: 95%; /* Full width button */
+    margin-top: 8px;
+}
+.btn:hover {
+    background-color: #0b88bd; 
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
